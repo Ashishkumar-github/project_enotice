@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Faculty Home Page
+		</title>
+	
+	<style>
+	html { 
+		background: url(banner.png) no-repeat center fixed  ; 
+		background-size: cover;
+		
+	}
+	
+	th {
+		background-color: #32CD32;
+		color: white;
+		padding: 12px 20px;
+		border-radius: 4px;
+	}
+		
+	table{
+		font-size:20px;
+		position:absolute;
+		top:20%;
+		left:20%;
+		
+	}
+	
+	input[type=submit],button{
+		background-color:#32CD32;
+		color: white;
+		padding: 12px 20px;
+		border: 4px;
+		border-radius: 1px;
+		cursor: pointer;
+		float:right;
+		
+		
+	}
+	
+	
+	a:link{
+		
+		text-decoration:none;
+	}
+	a{
+		
+		color:white;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	textarea {
+		resize: none;
+	}
+	h1{
+		color:white;
+		text-align:center;
+	}
+	img{
+		position:absolute;
+		top:0px;
+		left:25px;
+		
+	}
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: red;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+<img src="logo.jpg" width="150" height="112">
+<h1>e-NoticeBoard</h1> 
+<div>
+	<button>
+		<a href="loginnew.html">SignOut</a>	
+	</button>
+	<button>
+		<a href="eprofile.html">Edit Profile</a>	
+	</button>
+	<button>
+		
+		<a href="deletenotice.html">Delete Notice</a>
+	</button>	
+</div>
+
+<form action="notice.php" method="POST">
+<center>
+<table border="0">
+<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+<tr><td>Notice Id <input type="text" name="noticeid" placeholder="Notice Id" required /></td>
+	</tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+	
+<tr>
+	<td> Date    <input type="date" name="noticedate"  required /></td>	
+</tr>
+
+
+<tr><td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+<div>
+	
+	<tr><td>Notice</td></tr>
+	<tr><td><textarea  name="taname"  rows="10" cols="100" placeholder="Type Notice Here" required />
+	</textarea></td></tr>
+
+</div>
+
+<tr><td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+
+<tr>
+	<td> 
+		<form action="notice.php" method="POST">
+		<input type ="submit" value="Send">
+		</form>
+			
+	</td>
+</tr>
+
+</table>
+</center>
+
+<div class="footer">
+  <p>Concept & Design by Ashish(1MV16MCA03) & Raju(1MV16MCA15)</p>
+</div>
+
+</body>
+</html>

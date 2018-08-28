@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Forgot password</title>
+
+	<style>
+	html { 
+		background: url(banner.png) no-repeat center fixed  ; 
+		background-size: cover;
+	}
+	
+	th {
+		background-color: #32CD32;
+		color: white;
+		padding: 12px 20px;
+		border-radius: 4px;
+	}
+	
+	
+	table{
+		font-size:20px;
+	}
+	
+	input[type=submit],input[type=reset] {
+		background-color:#32CD32;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+   
+	}
+	
+	h1{
+		color:white;
+		text-align:center;
+	}
+	img{
+		position:absolute;
+		top:0px;
+		left:25px;
+		
+	}
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: red;
+		text-align: center;
+	}
+	</style>
+	</head>
+
+<body>
+<img src="logo.jpg" width="150" height="112">
+
+<h1>e-NoticeBoard</h1>
+<br><br>
+	
+<form action="updatepass.php" method="post">
+	
+<table border="0" align="center">
+	
+	<th colspan="2">Forgot Password</th>
+	
+	<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+	
+	<div>
+		<tr><td><input type="radio" name="radio" value="faculty"  />Faculty</td>
+		<td><input type="radio" name="radio" value="Student"  />Student<td></tr>
+	</div>
+
+	<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+	
+
+<tr><td>Email</td><td><input type ="email" name="femail" placeholder="Email" required /></td></tr>
+	
+
+<tr><td>Question</td> <td><select name="question">
+		<option>What was your childhood name</option>
+		<option>What was your first vehicle</option>
+		<option>What is your dream</option>
+		<option>Who is your favourite actor</option>
+		<option>Who is your favourite singer</option>
+		<option>What is your unique id number</option>
+	</select></td></tr>
+<br /><br />
+
+<tr><td>Answer </td><td><input type ="text" name="aname" placeholder="Answer" required /></td></tr>
+
+<tr><td>New Password</td><td> <input type ="password" name="nname" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></td></tr>
+<tr><td>Re-type Password</td><td> <input type ="password" name="rptname" placeholder="Re-type Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></td></tr>
+
+
+
+		<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+		
+			<tr><td><input type ="submit" name="ssubmit" value="Reset"/></td> &nbsp
+			<td><input type ="reset" name="passreset" value="Clear"/></td></tr>
+		</form>
+	
+	</table>
+	
+<div class="footer">
+  <p>Concept & Design by Ashish(1MV16MCA03) & Raju(1MV16MCA15)</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+	<title>Login</title>
+
+	<style>
+	html { 
+		background: url(banner.png) no-repeat center fixed  ; 
+		background-size: cover;
+	}
+	
+	th {
+		background-color: #32CD32;
+		color: white;
+		padding: 12px 20px;
+		border-radius: 4px;
+	
+	}
+		
+	table{
+		font-size:20px;
+	}
+	
+	input[type=submit] {
+		background-color:#32CD32;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+   
+	}
+	a:link {
+		text-decoration: none;
+	}
+
+	.snup{
+		float:right;
+	}
+	
+	img{
+		position:absolute;
+		top:0px;
+		left:25px;
+		
+	}
+	
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: red;
+		text-align: center;
+	}
+	</style>
+<link rel="stylesheet" type="text/css" href="allpage.css">
+	</head>
+<body>
+<img src="logo.jpg" width="150" height="112">
+<h1>e-NoticeBoard</h1>
+<br><br><br><br>
+<table border="0" align="center">
+
+<th colspan="2">Login</th>
+
+<form action="signin.php" method="post">
+
+<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+<div>
+	<tr><td>Email</td><td><input type ="email" name="uname" placeholder="Email" required /></td></tr>
+	<tr><td>Password</td><td><input type ="password" name="pwd" placeholder="Password" required /></td></tr>
+	
+</div>
+
+<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+<div>
+	<tr><td><input type="radio" name="radio" value="faculty"  />Faculty</td>
+	<td><input type="radio" name="radio" value="Student"  />Student</td></tr>
+</div>
+
+
+<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+
+<div>
+	<tr><td><a href="forgot.html">Forgot password? </a></td></tr><br/>
+</div>
+
+
+
+<tr> <td bgcolor="#FFFFFF" colspan="2">&nbsp;</td></tr>
+	
+		<tr><td><div class="button1"><input type="submit" value="SignIn"></div></td>
+	
+	</form> 
+	
+	&nbsp;
+	
+	
+	<form action="signup.html" method="POST">
+		<div class="snup">
+			<td><input type="submit" value="SignUp"></td>
+		</div>
+	</form>
+	
+	</td></tr>
+	
+	</table>
+	
+<div class="footer">
+  <p>Concept & Design by Ashish(1MV16MCA03) & Raju(1MV16MCA15)</p>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+<head>
+		<title>
+				Student Home page
+		</title>	
+
+	<style>
+
+	html { 
+		background: url(banner.png) no-repeat center fixed  ; 
+		background-size: cover;
+	}
+	
+	th {
+		background-color: #32CD32;
+		color: white;
+		padding:  5px;
+		
+	}	
+	
+	table{
+		font-size:20px;
+		align:center;
+	}
+	
+	button{
+		background-color:#32CD32;
+		position:relative;
+		top:15%;
+		left:85%;
+		color: white;
+		padding:12px 20px;
+		border: 4px;
+		border-radius: 1px;
+		cursor: pointer;
+		
+	a:link{
+		
+		text-decoration:none;
+	}
+	a{
+		
+		color:white;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	h1{
+		color:white;
+		text-align:center;
+	}
+	img{
+		position:absolute;
+		top:0px;
+		left:25px;
+		
+	}
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: red;
+		text-align: center;
+	}
+	
+	</style>
+</head>
+
+<body>
+<img src="logo.jpg" width="150" height="112">
+<h1>e-NoticeBoard</h1>
+	<button>
+		<a href="eprofilestu.html">Edit Profile</a>
+	</button> 
+	<button>
+		<a href="loginnew.html">SignOut</a>
+	</button>
+<center>
+<table border="0px">
+	  <tr><th>Notice Id</th><th>Date</th><th>Notices</th></tr>
+
+<?php
+
+include 'db.php';
+
+$q=$conn->query("select * from notice ORDER BY DATE DESC");
+
+while($row = mysqli_fetch_assoc($q)){
+    
+	echo '<tr><td>'.$row['notice_id'].'</td>';
+	echo '<td>'.$row['date'].'</td>';
+	echo '<td>'.$row['notices'].'</td></tr>';
+	 
+	}
+
+?>
+
+</table>
+</center>
+
+
+<div class="footer">
+  <p>Concept & Design by Ashish(1MV16MCA03) & Raju(1MV16MCA15)</p>
+</div>
+
+</body>
+</html>
